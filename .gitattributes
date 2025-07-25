@@ -1,0 +1,16 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# arkaht: I have no idea what this line does but it has been automatically 
+#         added since the git lfs removal, I guess we should keep it 
+# arkaht: Nope, don't keep it, it seems to mark the repository with LFS enabled
+#         from Github Desktop's perspective
+# * !text !filter !merge !diff
+
+# arkaht: We're disabling LFS for now, it has been the cause for so many problems
+#		  (i.e. LFS bandwidth limit involving the need to buy data packs and random
+#		  uassets locally staging themselves, forcing to a project re-clone) that the
+#		  advantages are not worth of the cost. Maybe I setup LFS very badly, or maybe
+#		  it's just not suited for Unreal projects. We just better not use it.
+# Git LFS only tracks files inside 'Content/LFS/'
+# Content/LFS/** filter=lfs diff=lfs merge=lfs -text
